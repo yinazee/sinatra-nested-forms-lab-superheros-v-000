@@ -15,6 +15,7 @@ class App < Sinatra::Base
       @hero_power =[]
       @hero_bio = []
       @team_members = params[:team][:members]
+      binding.pry
       @team_members.each do |member|
         @hero_name << member.name
         @hero_power << member.power
