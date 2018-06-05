@@ -22,7 +22,7 @@ class App < Sinatra::Base
       #   @hero_bio << member.bio
       end
       erb :team
-
+end
     end
 
 
