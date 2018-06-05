@@ -16,12 +16,13 @@ class App < Sinatra::Base
       @hero_bio = []
       @team_members = params[:team][:hero]
       @team_members.each do |hero|
-        @hero_name << hero["name"]
+        @hero_name << hero[:name]
+        @hero_power << member[:power]
+        @hero_bio << member[:bio]
         binding.pry
       end
       #   @hero_power << member.power
       #   @hero_bio << member.bio
-    # end
       erb :team
     end
 
