@@ -1,7 +1,5 @@
 <h1><%=@team_name%></h1>
 
-<h2><%= @team_motto%></h2>
+<h2>Motto:<%= @team_motto%></h2>
 
-<h1><%=@hero_name%></h1>
-
-
+<%@hero_name.each do |name|%>
