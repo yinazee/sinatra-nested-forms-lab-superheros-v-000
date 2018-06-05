@@ -9,9 +9,9 @@ class App < Sinatra::Base
     end
 
     get '/teams' do
+                binding.pry
       @team_name = Team.new(params[:team][:name])
       @team_motto = Team.new(params[:team][:motto])
-          binding.pry
       @hero_name = []
       @hero_power =[]
       @hero_bio = []
